@@ -10,13 +10,13 @@ script:
   - yarn build
 notifications:
   slack: localmeetups-co:xTc4oYzejXFFNHsAaYEzxIkE
-    on_success: always # default: change
-    on_failure: always # default: always
+    on_success: always
+    on_failure: always
   email:
     recipients:
       - oscar@platzi.com
-    on_success: always # default: change
-    on_failure: always # default: always
+    on_success: always
+    on_failure: alwayss
 deploy:
   provider: pages
   skip-cleanup: true
