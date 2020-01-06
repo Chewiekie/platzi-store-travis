@@ -11,7 +11,11 @@ script:
 notifications:
   slack: localmeetups-co:xTc4oYzejXFFNHsAaYEzxIkE
   email:
-    - oscar@platzi.com
+    recipients:
+      - oscar@platzi.com
+      - oscar@arepa.dev
+    on_success: always # default: change
+    on_failure: always # default: always
 deploy:
   provider: pages
   skip-cleanup: true
