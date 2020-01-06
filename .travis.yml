@@ -8,6 +8,8 @@ git:
   depth: 3
 script:
   - yarn build
+notifications:
+  slack: localmeetups-co:xTc4oYzejXFFNHsAaYEzxIkE
 deploy:
   provider: pages
   skip-cleanup: true
